@@ -1,0 +1,18 @@
+.header {
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  box-sizing: border-box;
+  padding: 0px 20px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}

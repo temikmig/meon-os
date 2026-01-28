@@ -1,0 +1,23 @@
+.icon {
+  width: 60px;
+  height: 60px;
+}
+
+.weekday {
+  font-size: 10px;
+  color: #f00;
+  font-family: Arial, sans-serif;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.day {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  height: 24px;
+  color: #000;
+}

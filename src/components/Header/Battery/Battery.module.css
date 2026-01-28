@@ -1,0 +1,41 @@
+.batteryCont {
+  width: 32px;
+  height: 16px;
+  border: 1px #fff solid;
+  border-radius: 6px;
+  position: relative;
+  padding: 1px;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+.batteryContInside {
+  width: 100%;
+  height: 12px;
+  border-radius: 4px;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 8px;
+}
+
+.batteryContInsideRed {
+  background: #800a0a;
+}
+
+.batteryContInsideGreen {
+  background: #068a46;
+}
+
+.batteryCont:after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 6px;
+  border-radius: 2px;
+  background: #fff;
+  position: absolute;
+  right: -3px;
+  top: 4px;
+}

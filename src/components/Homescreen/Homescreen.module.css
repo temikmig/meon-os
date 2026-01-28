@@ -1,0 +1,13 @@
+.homescreen {
+  width: 100%;
+  height: 100%;
+  padding-top: 44px;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: calc(100% - 52px);
+}

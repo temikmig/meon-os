@@ -1,0 +1,11 @@
+.pinnedContainer {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 8px;
+  background: #ffffff3d;
+  backdrop-filter: blur(3px);
+  width: 288px;
+  border-radius: 18px;
+}

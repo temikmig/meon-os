@@ -1,0 +1,8 @@
+.wifi {
+  height: 16px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 12px;
+  user-select: none;
+}
