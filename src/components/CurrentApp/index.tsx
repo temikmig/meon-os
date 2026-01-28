@@ -2,7 +2,7 @@ import { type FC, type ReactNode, useEffect, useRef, useState } from "react";
 import styles from "./CurrentApp.module.css";
 import { SwipeLine } from "../SwipeLine";
 
-const START_ZONE = 80;
+const START_ZONE = 40;
 const CLOSE_THRESHOLD = 140;
 const CLOSE_ANIMATION = 420;
 
@@ -45,13 +45,17 @@ export const CurrentApp: FC<CurrentAppProps> = ({ app, isOpen, onClose }) => {
   }, [isOpen, app]);
 
   const onPointerDown = (e: React.PointerEvent) => {
-    const bottomDistance = window.innerHeight - e.clientY;
+    const el = e.currentTarget;
+    const rect = el.getBoundingClientRect();
+
+    const bottomDistance = rect.bottom - e.clientY;
+
     if (bottomDistance > START_ZONE) return;
 
     startY.current = e.clientY;
     setDragging(true);
     setAnimating(false);
-    e.currentTarget.setPointerCapture(e.pointerId);
+    el.setPointerCapture(e.pointerId);
   };
 
   const onPointerMove = (e: React.PointerEvent) => {
