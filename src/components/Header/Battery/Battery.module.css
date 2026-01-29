@@ -1,17 +1,16 @@
 .batteryCont {
   width: 32px;
-  height: 16px;
-  border: 1px #fff solid;
-  border-radius: 6px;
+  height: 14px;
+  background: #ffffff2c;
+  border-radius: 4px;
   position: relative;
-  padding: 1px;
   box-sizing: border-box;
   user-select: none;
 }
 
 .batteryContInside {
   width: 100%;
-  height: 12px;
+  height: 14px;
   border-radius: 4px;
   background: #000;
   display: flex;
@@ -31,11 +30,24 @@
 .batteryCont:after {
   content: "";
   display: block;
-  width: 1px;
+  width: 2px;
   height: 6px;
-  border-radius: 2px;
-  background: #fff;
+  border-radius: 0px 2px 2px 0px;
+  background: #ffffff2c;
   position: absolute;
-  right: -3px;
+  right: -2px;
   top: 4px;
+}
+
+.batteryWrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  pointer-events: none;
 }

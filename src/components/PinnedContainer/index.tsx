@@ -1,3 +1,5 @@
+import clsx from "clsx";
+
 import { Application as PhoneApp } from "@/applications/Phone";
 import { Application as BrowserApp } from "@/applications/Browser";
 import { Application as MessagesApp } from "@/applications/Messages";
@@ -12,7 +14,7 @@ export const PinnedContainer = () => {
   const { icon: SettingsIcon } = SettingsApp({ pinned: true });
 
   return (
-    <div className={styles.pinnedContainer}>
+    <div className={clsx(styles.pinnedContainer, "liquid-glass")}>
       {PhoneIcon}
       {MessagesIcon}
       {BrowserIcon}

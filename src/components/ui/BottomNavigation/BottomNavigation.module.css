@@ -1,0 +1,29 @@
+.bottomNavigation {
+  width: calc(100% - 40px);
+  border-radius: 28px;
+  height: 56px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  bottom: 28px;
+}
+
+.navItem {
+  color: #fff;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+
+.icon svg {
+  width: 18px;
+  height: 18px;
+}
+
+.label {
+  font-size: 8px;
+}

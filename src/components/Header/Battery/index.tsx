@@ -18,9 +18,8 @@ export const Battery = () => {
           style={{
             width: (battery.level > 0.1 ? battery.level * 100 : 10) + "%",
           }}
-        >
-          {(battery.level * 100) | 0}%
-        </div>
+        />
+        <div className={styles.batteryWrap}>{(battery.level * 100) | 0}%</div>
       </div>
     );
 };
