@@ -1,5 +1,5 @@
 import styles from "./app.module.css";
 
 export const App = () => {
-  return <div className={styles.app}>Browser Application</div>;
+  return <div className={styles.app}>Браузер</div>;
 };

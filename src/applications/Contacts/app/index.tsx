@@ -1,5 +1,5 @@
 import styles from "./app.module.css";
 
 export const App = () => {
-  return <div className={styles.app}>Contacts Application</div>;
+  return <div className={styles.app}>Контакты</div>;
 };

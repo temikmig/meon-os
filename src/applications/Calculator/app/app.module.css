@@ -44,7 +44,8 @@
 }
 
 .calculatorButton:active {
-  transform: scale(0.95);
+  transform: scale(1.2);
+  opacity: 0.8;
 }
 
 .calculatorResult {

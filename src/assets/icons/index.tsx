@@ -10,3 +10,8 @@ export * from "./StopwatchIcon";
 export * from "./TimerIcon";
 
 export * from "./CalculatorIcon";
+
+export * from "./PhoneIcon";
+export * from "./BackspaceIcon";
+
+export * from "./TimePastIcon";

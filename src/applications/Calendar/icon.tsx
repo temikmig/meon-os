@@ -11,11 +11,11 @@ interface IconProps {
 }
 
 export const Icon: FC<IconProps> = ({ handleOpen, title }) => {
-  const { day, weekdayShort } = useCurrentDate();
+  const { day, weekday } = useCurrentDate();
 
   const bg = (
     <div className={styles.icon}>
-      <div className={styles.weekday}>{weekdayShort}</div>
+      <div className={styles.weekday}>{weekday}</div>
       <div className={styles.day}>{day}</div>
     </div>
   );

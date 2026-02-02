@@ -28,7 +28,7 @@ export const useCurrentDate = (): CurrentDate => {
 const formatDate = (date: Date): CurrentDate => {
   const longFormatter = new Intl.DateTimeFormat("ru-RU", {
     weekday: "long",
-    day: "2-digit",
+    day: "numeric",
     month: "long",
     year: "numeric",
   });
