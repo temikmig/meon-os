@@ -8,13 +8,13 @@ interface LockscreenProps {
 
 export const Lockscreen: FC<LockscreenProps> = ({ setIsLocked }) => {
   const currentTime = useCurrentTime();
-  const { date, weekdayShort } = useCurrentDate();
+  const { date, weekday } = useCurrentDate();
 
   return (
     <div className={styles.lockscreen}>
       <div className={styles.time}>{currentTime}</div>
       <div className={styles.date}>
-        {weekdayShort}, {date}
+        {weekday}, {date}
       </div>
       <div className={styles.unlockHint} onClick={() => setIsLocked(false)}>
         Разблокировать
